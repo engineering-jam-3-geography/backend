@@ -1,0 +1,33 @@
+Task
+
+{
+"description" : String -Mandatory,
+"level" : Integer -Mandatory,
+"visuals" : [Visual] -Not Empty,
+"interactions" : [Interaction] -Optional
+}
+
+Visual
+{
+"type" : VisualEnum -Mandatory,
+"location": Location -Mandatory,
+"init" : Boolean -Mandatory,
+"interactions" : [Interaction] -Optional
+}
+
+Interaction
+{
+"type" : InteractionEnum -Mandatory,
+"answer" : String-Mandatory
+}
+
+VisualEnum:
+Territory,
+Point
+
+InteractionEnum:
+MAP_TEXT,
+JOIN,
+CARD,
+ATTACH,
+COLOR

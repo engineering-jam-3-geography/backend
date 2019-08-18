@@ -1,0 +1,6 @@
+{
+  "description" : String -Mandatory,
+  "level" : Integer -Mandatory,
+  "visuals" : [Visual] -Not Empty,
+  "interactions" : [Interaction] -Optional
+}

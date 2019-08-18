@@ -1,0 +1,21 @@
+solution:
+
+{
+"user_id" : string,
+"task_id" : string,
+"answers" : [Answer]
+}
+
+Answer 
+
+{
+ "type": AnswerTypeEnum,
+ "value" : {}
+}
+
+AnswerTypeEnum
+JOIN,   - pair of 2 coordinates,
+MAP_TEXT - coordinate + text
+CARD -  array of question_id + array of option_id
+ATTACH - question_id + array of [option_id + coordinate]
+
